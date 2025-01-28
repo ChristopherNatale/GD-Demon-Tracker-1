@@ -1,0 +1,102 @@
+h1 {
+    margin: 1rem auto;
+}
+
+.userContainer {
+    display: grid;
+    grid-template-areas:
+    ". a a .";
+    background-color: rgb(38, 38, 38);
+    border: solid 0.5rem rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    margin-top: 4rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.userItem {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.userItem img {
+    display: block;
+    margin-right: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+}
+
+.userItem h3 {
+    font-family: inherit;
+    color: white;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* The styles below are for individual user pages. */
+
+.userBox {
+    display: block;
+    margin: 4rem auto;
+    padding-bottom: 2rem;
+    background-color:rgb(38 38 38);
+    height: 70%;
+    width: 50%;
+    border: 0.5rem solid rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+}
+
+.profilePicture {
+    display: block;
+    background-color: rgb(77, 77, 77);
+    height: 20rem;
+    width: 22rem;
+    margin: 3rem auto;
+    border: solid white;
+    border-radius: 0.5rem;
+}
+
+.profileButtons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.viewListBttn {
+    margin-left: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+}
+
+.compareListBttn {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+}
+
+.viewListBttn:hover, .compareListBttn:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}

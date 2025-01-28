@@ -1,0 +1,57 @@
+
+.accountPage {
+    display: flex;
+    max-width: 50%;
+    margin: 10rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(38 38 38);
+    border: 1rem solid rgb(38 38 38);
+    border-radius: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+label {
+    color: white;
+    font-family: inherit;
+}
+
+.pageHeader {
+    color: white;
+    font-family: inherit;
+    text-shadow: 0.5rem 0.5rem 0.9rem black;
+}
+
+input {
+    width: 15rem;
+    margin-bottom: 0.1rem;
+}
+
+.loginButton {
+    background-color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    margin: 1rem auto;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+.errorMessages {
+    color: white;
+}

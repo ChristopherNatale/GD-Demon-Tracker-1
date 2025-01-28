@@ -1,0 +1,43 @@
+.header {
+    margin: 0 auto;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.logoutButton {
+    position: absolute;
+    top: 0.34rem;
+    right: 0.5rem;
+    background-color: #292929;
+    border: 1rem solid #292929;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1.1rem;
+    margin-bottom: 0.05rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.logoutButton:hover {
+    cursor: pointer;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
