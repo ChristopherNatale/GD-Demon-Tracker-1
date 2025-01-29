@@ -1,7 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import defaultUserImg from "../assets/defaultPFP.png";
+import { getAuthToken } from "../util/auth";
 
 export default function User() {
+
+    const token = getAuthToken();
+
     let params = useParams();
     console.log(params);
     return (
