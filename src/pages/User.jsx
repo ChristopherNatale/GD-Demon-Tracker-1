@@ -10,7 +10,8 @@ export default function User() {
     <img className="profilePicture" src={defaultUserImg}/>
     <div className="profileButtons"> 
     <Link to={`/demonlist/${params.username}`}> <button className="viewListBttn"> View Demon List </button> </Link>
-    <Link to={`/demonlist/compare/${params.username}`}> <button className="compareListBttn"> Compare Lists </button> </Link>
+    <Link to={`/demonlist/compare/${params.username}`}> {token ? <button className="compareListBttn"> Compare Lists </button> :
+     <button disabled className="compareListBttn"> Compare Lists </button>}</Link>
     </div>
     </div>
     );

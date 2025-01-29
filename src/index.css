@@ -18,7 +18,7 @@ html {
   border-color: rgba(255, 255, 255, 0.7);
   background-color: rgb(38 38 38);
   opacity: 93%;
-  width: 50%;
+  max-width: 1080px;
   height: 12.5rem;
 }
 
