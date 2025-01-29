@@ -6,12 +6,14 @@ h1 {
     display: grid;
     grid-template-areas:
     ". a a .";
+    max-width: 900px;
     background-color: rgb(38, 38, 38);
     border: solid 0.5rem rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     margin: 4rem auto;
     padding: 2rem;
     justify-content: center;
+    align-items: center;
 }
 
 .userItem {
