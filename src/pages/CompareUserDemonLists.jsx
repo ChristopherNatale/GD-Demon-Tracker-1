@@ -38,7 +38,7 @@ export async function loader({params}) {
     const loggedUser = jwtDecode(token).username;
     const comparedUser = params.username;
 
-    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/join/' + loggedUser + '/' + comparedUser, {
+    const response = await fetch('https://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/join/' + loggedUser + '/' + comparedUser, {
     });
 
     const resData = await response.json();

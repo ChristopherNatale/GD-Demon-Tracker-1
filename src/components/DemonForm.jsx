@@ -95,7 +95,7 @@ export async function action({request, params}) {
     const token = getAuthToken();
     
     if (request.method=== 'POST') {
-    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/add', {
+    const response = await fetch('https://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/add', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ export async function action({request, params}) {
     return redirect(`/demonlist/${resData.username}`);
 }
     if (request.method === 'PATCH') {
-        const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + demonData.levelID, {
+        const response = await fetch('https://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + demonData.levelID, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

@@ -35,7 +35,7 @@ export default function UserDemonList() {
 export async function loader({params}) {
 
   console.log(params);
-  const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + params.username, {
+  const response = await fetch('https://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + params.username, {
   });
 
   if (!response.ok) {
