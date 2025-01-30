@@ -47,7 +47,7 @@ export async function action({request}) {
     }
     
     console.log(authData)
-    const response = await fetch('http://localhost:3001' + requestType.pathname, {
+    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001' + requestType.pathname, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

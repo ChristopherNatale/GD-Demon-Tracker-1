@@ -58,7 +58,7 @@ export async function loader({request, params}) {
     
     const username = params.username;
     const levelID = params.levelID;
-    const response = await fetch('http://localhost:3001/demonlist/' + username + '/' + levelID, {
+    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + username + '/' + levelID, {
       });
     
       if (!response.ok) {
@@ -75,7 +75,7 @@ export async function loader({request, params}) {
 export async function action({params}) {
     const levelID = params.levelID;
     const token = getAuthToken();
-    const response = await fetch('http://localhost:3001/demonlist/' + levelID, {
+    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/demonlist/' + levelID, {
         method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
