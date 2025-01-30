@@ -15,7 +15,7 @@ export default function AddDemon() {
     const [options, setOptions] = useState([]);
 
     function handleSearch() {
-        fetch(`http://localhost:3001/search/${search}`)
+        fetch(`https://gd-demon-tracker-be-production.up.railway.app/search/${search}`)
         .then((response) => {
             return response.json();
         })
