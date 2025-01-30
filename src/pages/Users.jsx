@@ -24,7 +24,7 @@ export default function Users() {
 }
 
 export async function loader() {
-    const response = await fetch('https://gd-demon-tracker-be-production.up.railway.app:3001/users', {
+    const response = await fetch('http://gd-demon-tracker-be-production.up.railway.app:3001/users', {
       });
 
     const resData = await response.json();
