@@ -7,6 +7,7 @@
 }
 
 .list {
+    overflow-x: auto;
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -26,6 +27,7 @@
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     border-radius: 0.5rem;
+    z-index: 0;
 }
 
 .logoutButton:hover {
