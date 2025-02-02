@@ -11,7 +11,13 @@ html {
 }
 
 .aboutContainer {
-  display: block;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+}
+
+.aboutItem {
+  overflow: auto;
   margin: 2rem auto;
   border: 0.2rem solid;
   border-radius: 1rem;
@@ -22,12 +28,13 @@ html {
   height: 12.5rem;
 }
 
-.aboutContainer h2 {
+.aboutItem h2 {
   margin: 0.5rem auto;
   text-align: center;
 }
 
-.aboutContainer p {
+.aboutItem p {
+  margin-bottom: 0.5rem;
   margin-left: 0.6rem;
   line-height: 2;
 }
