@@ -224,7 +224,7 @@ html {
   align-items: center;
   flex-direction: column;
   width: 48%;
-  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .infoContainer h1 {
