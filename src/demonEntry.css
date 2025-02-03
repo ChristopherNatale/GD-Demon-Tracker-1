@@ -1,7 +1,6 @@
 .demonEntry {
     list-style-type: none;
     opacity: 0.8;
-    animation: slide-right-fade-in 0.3s ease-out forwards;
   }
   
   .entryData {

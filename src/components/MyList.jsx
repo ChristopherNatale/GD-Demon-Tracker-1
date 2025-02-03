@@ -134,7 +134,7 @@ export default function MyList({demons, mode}) {
                     const progressClass = getProgressClass(demons.status)
                 return (
                     <>
-                    <Link className="removeUnderlineWhite" to={`/demonlist/${username}/${demons.levelID}`}>
+                    <Link className="removeUnderlineWrapper" to={`/demonlist/${username}/${demons.levelID}`}>
                     <li className="demonEntry" key={demons.levelID}>
                         <img src={img} />
                         <div className="entryData">

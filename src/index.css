@@ -132,8 +132,8 @@ html {
 .modal {
   display: flex;
   flex-direction: row;
-  width: 60rem;
-  height: 20rem;
+  width: 55%;
+  height: 40%;
   margin: auto;
   position: fixed;
   top: 0;
@@ -152,8 +152,8 @@ html {
 .filterModal {
   display: flex;
   flex-direction: column;
-  width: 40rem;
-  height: 8rem;
+  width: 45%;
+  height: 20%;
   margin: auto;
   position: fixed;
   top: 0;
@@ -281,6 +281,11 @@ html {
 }
 
 .removeUnderlineWhite {
+  text-decoration: none;
+  color: white;
+}
+
+.removeUnderlineWrapper { /* This is a horrible name considering this classes's function. */
   display: block;
   width: 100%;
   height: 10rem;
@@ -292,6 +297,7 @@ html {
   border: solid rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   padding: 10px;
+  animation: slide-right-fade-in 0.3s ease-out forwards;
 }
 
 @keyframes slide-down-fade-in {
