@@ -1,25 +1,22 @@
+.headerContainer {
+    max-width: 100%;
+}
+
 .header {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10rem;
     color: white;
     background-image: url("../../assets/VerdantLandscapeTest.png");
     background-color: rgb(0, 0, 0);
-    z-index: 0;
     text-align: center;
 }
 
 .textItem {
-    overflow-y: hidden;
-    overflow-x: auto;
     display: block;
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
+    margin: 1% auto;
     background-color: rgb(38 38 38);
     opacity: 93%;
-    width: 50%;
-    height: 80%;
+    width: 90%;
+    max-width: 70%;
 }
 h1 {
     font-family: Calibri;

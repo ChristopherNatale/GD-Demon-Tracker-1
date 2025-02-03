@@ -118,19 +118,20 @@ export default function MyList({demons, mode}) {
         <>
         {content}
         <h1 className="listTitle"> {title} </h1>
-        <div className="listHeader"> 
-        <button className="filterDemonButton" onClick={handleFilterChange}> Filters </button>
-        {mode !== "view" ?
-        <NavLink to="add">
-        <button className="addDemonButton"> Add Demon </button>
-        </NavLink> 
-        : null}
 
-        </div>
         <div className="demonList"> 
+            <div className="listHeader"> 
+                <button className="filterDemonButton" onClick={handleFilterChange}> Filters </button>
+                {mode !== "view" ?
+                <NavLink to="add">
+                <button className="addDemonButton"> Add Demon </button>
+                </NavLink> 
+                : null}
+            </div>
             <ul> 
                 {demons.map((demons) => {
                     const img = getDemonPicture(demons.difficulty)
+                    const progressClass = getProgressClass(demons.status)
                 return (
                     <>
                     <Link className="removeUnderlineWhite" to={`/demonlist/${username}/${demons.levelID}`}>
@@ -141,10 +142,10 @@ export default function MyList({demons, mode}) {
                         <h5 className="entryCreator"> {demons.creator} </h5> 
                         <h4 className="entryComments"> {demons.comments ? `"` + (demons.comments) + `"`: undefined} </h4>
                         </div>
-                        <div className="entryUserStats"> 
-                        <h3> {demons.status} {demons.status !== "Complete" ? `(${demons.progress}%)` : undefined} </h3>
-                        </div>
                     </li> 
+                    <div className="entryUserStats"> 
+                        <h3 className={progressClass}> {demons.status} {demons.status !== "Complete" ? `(${demons.progress}%)` : undefined} </h3>
+                    </div>
                     </Link>
                     </>
                 );
@@ -172,6 +173,21 @@ export function getDemonPicture(difficulty) {
         return insaneDemon;
     }
     return extremeDemon;
+}
+
+export function getProgressClass(status) {
+    if (status === "Complete") {
+        return "complete"
+    }
+    if (status === "In Progress") {
+        return "inprogress"
+    }
+    if (status === "On The Backburner") {
+        return "backburner"
+    }
+    if (status === "Dropped") {
+        return "dropped"
+    }
 }
 
 

@@ -2,7 +2,7 @@ import "./header.css"
 
 export default function Header() {
     return (
-        <div>
+        <div className="headerContainer">
         <header className="header"> 
             <div className="textItem">
             <h1> Geometry Dash Demon Tracker</h1>
