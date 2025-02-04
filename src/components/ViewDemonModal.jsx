@@ -31,26 +31,28 @@ export default function ViewDemonModal() {
     console.log(demonData);
 
     return (
-        <div className="modalBackdrop">
-            <div className="modal">
-                <img src={getDemonPicture(demonData.difficulty)}/>
-                <div className="infoContainer">
+        <> 
+        <div className="modal">
+            <img src={getDemonPicture(demonData.difficulty)}/>
+            <div className="infoContainer">
                 <h1> {demonData.name} </h1>
                 <h4> {demonData.creator} </h4>
                 <h3> Status: {demonData.status} {demonData.status !== "Complete" ? `(${demonData.progress}%)` : undefined} </h3>
                 <p> Comments: {demonData.comments ? demonData.comments : "N/A"} </p>
                 <p> Attempts: Coming soon! </p>
-                </div>
-                <div className="modalButtonsContainer">
+            </div>
+            <div className="modalButtonsContainer">
                 {listMode !== "view" ?
                 (<>
                 <button className="modalButton"> <Link className="removeUnderlineWhite" to={`/demonlist/${params.username}/${demonData.levelID}/edit`}> Edit </Link> </button>
                 <button className="modalButton" onClick={handleRemoveDemon}> Delete </button> 
                 <button className="modalButton" onClick={onClose}> Close </button> </>)
                 : <button className="modalButton" onClick={onClose}> Close </button>}
-                </div>
             </div>
         </div>
+        <div className="modalBackdrop">
+        </div>
+        </>
     )
 }
 

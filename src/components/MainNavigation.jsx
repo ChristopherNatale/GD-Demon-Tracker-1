@@ -18,7 +18,8 @@ export default function MainNavigation() {
         }
     }
 
-    return <header className={classes.header}>
+    return (
+    <header className={classes.header}>
         <nav>
             <ul className={classes.list}>
                 <li> 
@@ -52,4 +53,5 @@ export default function MainNavigation() {
             </ul>
         </nav>
     </header>
+    )
 }
