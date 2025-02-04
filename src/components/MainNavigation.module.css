@@ -8,6 +8,7 @@
 
 .list {
     display: flex;
+    align-items: center;
     min-width: 0;
     gap: 1rem;
     list-style: none;
@@ -16,14 +17,13 @@
 }
 
 .logoutButton {
+    max-height: 10%;
     background-color: #292929;
     border: 1.062rem solid #292929;
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
     font-size: 1.1rem;
-    position: absolute;
-    top: 0%;
 }
 
 .logoutButton:hover {

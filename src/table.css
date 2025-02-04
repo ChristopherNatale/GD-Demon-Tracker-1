@@ -1,14 +1,19 @@
 .tableContainer {
+    display: block;
     margin: 2rem auto;
     background-color: rgb(38, 38, 38);
     border: 0.5rem solid rgba(255, 255, 255, 0.7);
     border-radius: 2rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    width: 45%;
+    width: 90%;
+    min-width: 0;
+    max-width: 55%;
+    min-height: 50%;
 }
 
 .comparisonTable {
+    width: 80%;
     margin: 2rem auto;
     background-color: rgba(255, 255, 255, 0.1);
     border: 0.5rem solid rgb(60, 60, 60);
@@ -30,7 +35,7 @@
 .comparisonTable input[type=checkbox] {
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 4.2rem;
+    margin-left: 45%;
     margin-right: 0rem;
     padding: 0;
     accent-color: green;

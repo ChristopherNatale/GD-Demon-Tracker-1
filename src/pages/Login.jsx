@@ -18,16 +18,14 @@ export default function Login({mode}) {
                     ))} 
                     </ul>}
                     {data && data.message && <p className="errorMessages"> {data.message} </p>}
-                <p>
+                <div className="inputFields">
                     <label htmlFor="username"> Username </label>
                     <input id="username" type="username" name="username" required />
-                </p>
-                <p>
                     <label htmlFor="password"> Password </label>
                     <input id="password" type="password" name="password" required/>
-                </p>
                     <button className="loginButton"> {isRegistering ? "Sign Up" : "Log In"} </button>
                 </div>
+            </div>
             </Form>
         </>
     )
